@@ -74,13 +74,13 @@ export default function ZoikoLoopFooter() {
     <footer
       ref={ref}
       className="relative w-full"
-      style={{ backgroundColor: "#0D1B3E" }}
+      style={{ backgroundColor: "#0D1625" }}
     >
       {/* Subtle top border */}
       <div className="h-px w-full" style={{ backgroundColor: "rgba(255,255,255,0.06)" }} />
 
       {/* ── Main footer grid ── */}
-      <div className="mx-auto max-w-6xl px-6 py-14 lg:px-8 lg:py-16">
+      <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5 lg:gap-8">
 
           {/* ── Col 1: Brand ── */}
