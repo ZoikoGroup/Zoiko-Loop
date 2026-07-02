@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 
 
-const BG = "#0A0D14";
+const BG = "#080E1AF5";
 const MINT = "#34D399";
 const AMBER = "#E0A83E";
 
@@ -37,7 +37,7 @@ export default function Header() {
 
   return (
     <header
-      className="relative z-50 w-full border-b border-white/5"
+      className="sticky top-0 z-50 w-full border-b border-white/5"
       style={{
         backgroundColor: BG,
         opacity: mounted ? 1 : 0,
@@ -48,7 +48,7 @@ export default function Header() {
       <nav className="mx-auto flex h-[68px] max-w-7xl items-center justify-between px-6 lg:px-8">
 
         {/* ── Logo ── */}
-        <a href="/" className="flex items-center gap-2.5 flex-shrink-0">
+        <a href="#" className="flex items-center gap-2.5 flex-shrink-0">
           <span className="relative flex h-8 w-8 items-center justify-center overflow-hidden rounded-full">
             <Image
               src={LOGO_SRC}
