@@ -140,14 +140,14 @@ export default function ZoikoLoopFooter() {
               </Link>
 
               {/* Tagline */}
-              <p className="mt-5 max-w-[260px] text-[13px] leading-relaxed text-white/55">
+              <p className="mt-5 max-w-[300px] text-[13px] leading-relaxed text-white/55">
                 Global telecom rewards and retention infrastructure for MNOs,
                 MVNOs, and prepaid operators.
               </p>
 
               {/* Disclaimer box */}
               <div
-                className="mt-5 max-w-[280px] rounded-lg border p-3.5"
+                className="mt-5 max-w-[300px] rounded-lg border p-3.5"
                 style={{
                   borderColor: "rgba(255,255,255,0.1)",
                   backgroundColor: "rgba(255,255,255,0.04)",
