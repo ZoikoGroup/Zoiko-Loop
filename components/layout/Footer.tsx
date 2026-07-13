@@ -53,7 +53,7 @@ const NAV = [
   {
     label: "Company",
     links: [
-      { label: "About",         href: "#" },
+      { label: "About",         href: "/about" },
       { label: "Zoiko Tech Inc", href: "#" },
       { label: "Security",      href: "#" },
       { label: "Privacy",       href: "#" },
