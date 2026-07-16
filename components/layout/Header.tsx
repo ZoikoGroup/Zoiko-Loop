@@ -9,7 +9,7 @@ const BG = "#080E1AF5";
 const MINT = "#34D399";
 const AMBER = "#E0A83E";
 
-const LOGO_SRC = "/images/zoiko-loop-logo.png";
+const LOGO_SRC = "/images/zoiko-loop-logo 1.svg";
 
 const NAV_LINKS = [
   { label: "Platform", href: "/platform" },
@@ -48,25 +48,22 @@ export default function Header() {
       <nav className="mx-auto flex h-[68px] max-w-7xl items-center justify-between px-6 lg:px-8">
 
         {/* ── Logo ── */}
-        <a href="#" className="flex items-center gap-2.5 flex-shrink-0">
-          <span className="relative flex h-8 w-8 items-center justify-center overflow-hidden rounded-full">
-            <Image
-              src={LOGO_SRC}
-              alt="Zoiko Loop"
-              fill
-              sizes="32px"
-              className="object-contain"
-              onError={(e) => {
-                // Graceful fallback while the real logo asset is wired up.
-                (e.currentTarget as HTMLImageElement).style.display = "none";
-              }}
-            />
-          </span>
-          <span className="text-[17px] font-bold tracking-tight">
-            <span className="text-white">Zoiko</span>{" "}
-            <span style={{ color: MINT }}>Loop</span>
-          </span>
-        </a>
+        <a href="#" className="flex items-center gap-2.5 flex-shrink-0 bg-white p-2 rounded-md">
+  <span className="relative flex h-[32px] w-[174px] items-center justify-center overflow-hidden">
+    <Image
+      src="/images/zoikoloop-logo 1.svg"
+      alt="Zoiko Loop"
+      width={174}
+      height={32}
+      priority
+      className="object-contain"
+      onError={(e) => {
+        // Graceful fallback while the real logo asset is wired up.
+        (e.currentTarget as HTMLImageElement).style.display = "none";
+      }}
+    />
+  </span>
+</a>
 
         {/* ── Desktop nav links ── */}
         <div className="hidden items-center gap-8 lg:flex">
