@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 
 export default function ZoikoLoopHome() {
   return (
@@ -20,12 +21,18 @@ export default function ZoikoLoopHome() {
             Zoiko Loop is the global telecom rewards and retention platform that converts reliable bill payment, recharge behaviour, and bundle renewal into earned rewards, measurable loyalty, and operator retention intelligence.
           </p>
           <div className="pt-4 flex flex-col sm:flex-row gap-4">
-            <button className="h-14 px-8 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold font-['Space_Grotesk'] rounded-lg shadow-[0_0_20px_0_rgba(232,160,32,0.15)] transition-all">
-              Book a Demo
-            </button>
-            <button className="h-14 px-6 border border-white/50 hover:border-white text-slate-300 font-medium font-['Space_Grotesk'] rounded-lg transition-colors">
-              Request Operator Access &rarr;
-            </button>
+            <Link
+  href="/book-a-demo"
+  className="inline-flex items-center justify-center h-14 px-8 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold font-['Space_Grotesk'] rounded-lg shadow-[0_0_20px_0_rgba(232,160,32,0.15)] transition-all"
+>
+  Book a Demo
+</Link>
+           <Link
+  href="/request-operator-access"
+  className="inline-flex items-center justify-center h-14 px-6 border border-white/50 hover:border-white text-slate-300 font-medium font-['Space_Grotesk'] rounded-lg transition-colors"
+>
+  Request Operator Access &rarr;
+</Link>
           </div>
           <div className="pt-8 flex flex-wrap gap-3">
             {['MNOs & MVNOs', 'Double-entry ledger', 'Consent-led', 'Fraud-resistant'].map((feat, i) => (
